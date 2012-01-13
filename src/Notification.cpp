@@ -187,7 +187,7 @@ void Notification::setHintString(const QString & key, const QString & value)
 	m_hints.insert(key, value);
 }
 
-void Notification::setHintByte(const QString & key, quint8 value)
+void Notification::setHintByte(const QString & key, char value)
 {
 	m_hints.insert(key, value);
 }
