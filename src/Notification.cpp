@@ -189,7 +189,7 @@ void Notification::setHintString(const QString & key, const QString & value)
 
 void Notification::setHintByte(const QString & key, char value)
 {
-	m_hints.insert(key, value);
+    setHintByteArray(key, QByteArray(1, value));
 }
 
 void Notification::setHintByteArray(const QString & key, const QByteArray & value)
